@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MFTVWork</string>
+    <string name="developer_name">Mohammad Ali Riazati</string>
+    <string name="developer_photo">Developer Photo</string>
 </resources>
