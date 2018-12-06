@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 
+import ir.phoenix_iran.mftvwork.Exercises.FirstExercise;
+import ir.phoenix_iran.mftvwork.Exercises.SecondExercise_1;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppCompatButton firstExercise , secondExercise;

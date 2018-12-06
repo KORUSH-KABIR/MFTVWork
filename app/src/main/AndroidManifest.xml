@@ -7,18 +7,19 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstExercise" />
-        <activity android:name=".SecondExercise_1" />
-        <activity android:name=".SecondExercise_2"></activity>
+        <activity android:name=".Exercises.FirstExercise" android:label="FirstExercise" />
+        <activity android:name=".Exercises.SecondExercise_1" android:label="SecondExercise_1" />
+        <activity android:name=".Exercises.SecondExercise_2" android:label="SecondExercise_2"/>
     </application>
 
 </manifest>
