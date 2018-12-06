@@ -1,7 +1,15 @@
 <resources>
+    
     <string name="app_name">MFTVWork</string>
     <string name="developer_name">Mohammad Ali Riazati</string>
-    <string name="developer_photo">Developer Photo</string>
+
     <string name="btn_first_exercise">تمرین اول</string>
     <string name="btn_second_exercise">تمرین دوم</string>
+    <string name="btn_confirm">تایید اطلاعات</string>
+
+    <string name="edt_hint_input_first_name">نام خود را وارد کنید</string>
+    <string name="edt_hint_input_last_name">نام خانوادگی خود را وارد کنید</string>
+    <string name="edt_hint_input_age">سن خود را وارد کنید</string>
+    <string name="edt_hint_input_phone">شماره خود را وارد کنید</string>
+
 </resources>
