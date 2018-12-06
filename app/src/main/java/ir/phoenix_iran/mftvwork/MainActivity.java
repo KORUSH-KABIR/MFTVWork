@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 
-import ir.phoenix_iran.mftvwork.Exercises.FirstExercise;
-import ir.phoenix_iran.mftvwork.Exercises.SecondExercise_1;
+import ir.phoenix_iran.mftvwork.FirstExercises.FirstSection;
+import ir.phoenix_iran.mftvwork.FirstExercises.SecondSection_1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,14 +24,14 @@ public class MainActivity extends AppCompatActivity {
         firstExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(FirstExercise.class);
+                startActivity(FirstSection.class);
             }
         });
 
         secondExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(SecondExercise_1.class);
+                startActivity(SecondSection_1.class);
             }
         });
 
