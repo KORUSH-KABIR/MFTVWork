@@ -52,7 +52,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="JAN"
+                    android:text="@string/txt_jan"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -60,19 +60,21 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
+                    android:contentDescription="@string/txt_todo"
                     android:scaleType="centerCrop"
                     android:src="@drawable/photo_1_1" />
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16sp"
                 android:layout_marginRight="16sp"
+                android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
                 android:src="@mipmap/icon_fingerprint" />
 
@@ -106,7 +108,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="FEB"
+                    android:text="@string/txt_feb"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -114,19 +116,21 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
+                    android:contentDescription="@string/txt_todo"
                     android:scaleType="centerCrop"
                     android:src="@drawable/photo_1_2" />
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16sp"
                 android:layout_marginRight="16sp"
+                android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
                 android:src="@mipmap/icon_fingerprint" />
 
@@ -160,7 +164,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="MAR"
+                    android:text="@string/txt_mar"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -168,19 +172,21 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
+                    android:contentDescription="@string/txt_todo"
                     android:scaleType="centerCrop"
                     android:src="@drawable/photo_1_1" />
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16sp"
                 android:layout_marginRight="16sp"
+                android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
                 android:src="@mipmap/icon_fingerprint" />
 
@@ -189,11 +195,11 @@
     </android.support.v7.widget.CardView>
 
     <TextView
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:padding="5dp"
         android:text="@string/txt_second_quarter"
         android:textColor="@color/colorAccent"
@@ -233,7 +239,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="APR"
+                    android:text="@string/txt_apr"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -241,19 +247,21 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
+                    android:contentDescription="@string/txt_todo"
                     android:scaleType="centerCrop"
                     android:src="@drawable/photo_2_1" />
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16sp"
                 android:layout_marginRight="16sp"
+                android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
                 android:src="@mipmap/icon_fingerprint" />
 
@@ -287,7 +295,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:gravity="center"
-                    android:text="MAY"
+                    android:text="@string/txt_may"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -295,19 +303,21 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
+                    android:contentDescription="@string/txt_todo"
                     android:scaleType="centerCrop"
                     android:src="@drawable/photo_2_3" />
 
             </LinearLayout>
 
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16sp"
                 android:layout_marginRight="16sp"
+                android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
                 android:src="@mipmap/icon_fingerprint" />
 

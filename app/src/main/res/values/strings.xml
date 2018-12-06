@@ -22,5 +22,11 @@
     <string name="txt_phone">شماره:</string>
     <string name="txt_first_quarter">First Quarter</string>
     <string name="txt_second_quarter">Second Quarter</string>
+    <string name="txt_jan">JAN</string>
+    <string name="txt_feb">FEB</string>
+    <string name="txt_mar">MAR</string>
+    <string name="txt_apr">APR</string>
+    <string name="txt_may">MAY</string>
+    <string name="txt_todo">TODO</string>
 
 </resources>
