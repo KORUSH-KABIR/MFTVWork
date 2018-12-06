@@ -1,7 +1,9 @@
-package ir.phoenix_iran.mftvwork;
+package ir.phoenix_iran.mftvwork.Exercises;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import ir.phoenix_iran.mftvwork.R;
 
 public class SecondExercise_1 extends AppCompatActivity {
 
