@@ -32,11 +32,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void setIntents(Class<? extends AppCompatActivity> activity){
-        Intent intent = new Intent(this , activity.getClass());
+        Intent intent = new Intent(this , activity);
         startActivity(intent);
     }
 
