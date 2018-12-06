@@ -21,20 +21,20 @@ public class MainActivity extends AppCompatActivity {
         firstExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setIntents(FirstExerciseActivity.class);
+                startActivity(FirstExerciseActivity.class);
             }
         });
 
         secondExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setIntents(SecondExerciseActivity.class);
+                startActivity(SecondExerciseActivity.class);
             }
         });
 
     }
 
-    private void setIntents(Class<? extends AppCompatActivity> activity){
+    private void startActivity(Class<? extends AppCompatActivity> activity){
         Intent intent = new Intent(this , activity);
         startActivity(intent);
     }
