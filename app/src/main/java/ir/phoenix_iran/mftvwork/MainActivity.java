@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         firstExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(FirstExerciseActivity.class);
+                startActivity(FirstExercise.class);
             }
         });
 
         secondExercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(SecondExerciseActivity.class);
+                startActivity(SecondExercise_1.class);
             }
         });
 
