@@ -1,16 +1,17 @@
 package ir.phoenix_iran.mftvwork;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 
+import ir.phoenix_iran.mftvwork.Core.SetupActivity;
 import ir.phoenix_iran.mftvwork.FirstExercises.FirstSection;
 import ir.phoenix_iran.mftvwork.FirstExercises.SecondSection_1;
 import ir.phoenix_iran.mftvwork.SecondExercises.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends SetupActivity {
 
     private AppCompatButton firstExercise , secondExercise , thirdExercise;
 

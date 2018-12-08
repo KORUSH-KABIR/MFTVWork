@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#170420"
+    tools:ignore="MissingPrefix"
     android:layout_height="match_parent"
     tools:context=".SecondExercises.BaseActivity">
     
@@ -12,16 +13,22 @@
         android:scaleType="centerCrop"
         android:src="@drawable/header_pic"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
-    
+        android:layout_height="match_parent" />
+
     <TextView
-        android:layout_marginTop="170dp"
+        android:id="@+id/tctWelcome"
+        fontPath="cinzel_bold.otf"
+        android:layout_marginTop="30dp"
         android:text="Welcome To My Application"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
         android:textColor="@color/gray100"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
     
 </RelativeLayout>
