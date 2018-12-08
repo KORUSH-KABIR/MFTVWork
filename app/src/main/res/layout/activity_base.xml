@@ -85,7 +85,7 @@
         android:gravity="center"
         android:padding="5dp"
         android:text="Welcome"
-        android:textColor="@color/gray100"
+        android:textColor="@color/gray200"
         android:textSize="50sp"
         android:textStyle="bold" />
 
@@ -107,7 +107,7 @@
 
     <TextView
         android:id="@+id/txtSelect"
-        fontPath="bebas.ttf"
+        fontPath="exo2_light.otf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/layoutButtons"
@@ -117,7 +117,7 @@
         android:gravity="center"
         android:padding="5dp"
         android:text="Please Select a Button"
-        android:textColor="@color/gray100"
+        android:textColor="@color/gray200"
         android:textSize="21sp"
         android:textStyle="bold" />
 
@@ -131,6 +131,7 @@
         android:weightSum="2">
 
         <Button
+            fontPath="exo2_light.otf"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
@@ -145,6 +146,7 @@
             android:textStyle="bold" />
 
         <Button
+            fontPath="exo2_light.otf"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
