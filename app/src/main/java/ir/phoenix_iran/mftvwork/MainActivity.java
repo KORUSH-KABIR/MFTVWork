@@ -8,10 +8,11 @@ import android.view.View;
 
 import ir.phoenix_iran.mftvwork.FirstExercises.FirstSection;
 import ir.phoenix_iran.mftvwork.FirstExercises.SecondSection_1;
+import ir.phoenix_iran.mftvwork.SecondExercises.BaseActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AppCompatButton firstExercise , secondExercise;
+    private AppCompatButton firstExercise , secondExercise , thirdExercise;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         firstExercise = findViewById(R.id.firstExercise);
         secondExercise = findViewById(R.id.secondExercise);
+        thirdExercise = findViewById(R.id.thirdExercise);
 
         firstExercise.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(SecondSection_1.class);
+            }
+        });
+
+        thirdExercise.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(BaseActivity.class);
             }
         });
 

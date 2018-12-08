@@ -7,6 +7,7 @@
     <!-- // Buttons // -->
     <string name="btn_first_exercise">تمرین اول</string>
     <string name="btn_second_exercise">تمرین دوم</string>
+    <string name="btn_third_exercise">تمرین سوم</string>
     <string name="btn_confirm">تایید اطلاعات</string>
 
     <!-- // EditTexts Hints // -->
