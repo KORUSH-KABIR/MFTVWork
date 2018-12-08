@@ -3,13 +3,15 @@
     package="ir.phoenix_iran.mftvwork">
 
     <application
+        android:name=".Core.CentralCore"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,9 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstExercises.FirstSection" android:label="FirstSection" />
-        <activity android:name=".FirstExercises.SecondSection_1" android:label="SecondSection_1" />
-        <activity android:name=".FirstExercises.SecondSection_2" android:label="SecondSection_2"/>
+        <activity
+            android:name=".FirstExercises.FirstSection"
+            android:label="FirstSection" />
+        <activity
+            android:name=".FirstExercises.SecondSection_1"
+            android:label="SecondSection_1" />
+        <activity
+            android:name=".FirstExercises.SecondSection_2"
+            android:label="SecondSection_2" />
+        <activity android:name=".SecondExercises.BaseActivity" />
+        <activity android:name=".SecondExercises.LoginActivity" />
+        <activity android:name=".SecondExercises.RegisterActivity" />
+        <activity android:name=".SecondExercises.ProfileActivity" />
     </application>
 
 </manifest>
