@@ -11,16 +11,76 @@
     <ImageView
         android:id="@+id/header"
         android:scaleType="centerCrop"
-        android:src="@drawable/header_pic"
+        android:src="@drawable/pic_bg_5"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+        <TextView
+            android:gravity="center"
+            fontPath="bebas.ttf"
+            android:text="L"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:textColor="@color/gray500"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            fontPath="bebas.ttf"
+            android:text="O"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:textColor="@color/gray100"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            fontPath="bebas.ttf"
+            android:text="G"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:textColor="@color/gray500"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            fontPath="bebas.ttf"
+            android:text="O"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:textColor="@color/gray100"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/tctWelcome"
+        android:layout_below="@+id/logoLayout"
+        android:id="@+id/txtWelcome"
         fontPath="cinzel_bold.otf"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
         android:text="Welcome To My Application"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:padding="5dp"
@@ -29,6 +89,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-
+    <TextView
+        fontPath="exo2_light.otf"
+        android:layout_below="@+id/txtWelcome"
+        android:id="@+id/txtInfo"
+        android:layout_marginTop="25dp"
+        android:text="Hello!\nYou must be logged in to continue to work"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textColor="@color/gray400"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     
 </RelativeLayout>
