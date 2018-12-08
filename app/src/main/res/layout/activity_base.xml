@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#170420"
     android:layout_height="match_parent"
     tools:context=".SecondExercises.BaseActivity">
-
-</android.support.constraint.ConstraintLayout>
+    
+    <ImageView
+        android:id="@+id/header"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header_pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    
+    <TextView
+        android:layout_marginTop="170dp"
+        android:text="Welcome To My Application"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/gray100"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+</RelativeLayout>
