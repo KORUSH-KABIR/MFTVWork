@@ -11,8 +11,7 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:label="MainActivity">
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,10 +27,18 @@
         <activity
             android:name=".FirstExercises.SecondSection_2"
             android:label="SecondSection_2" />
-        <activity android:name=".SecondExercises.BaseActivity" />
-        <activity android:name=".SecondExercises.LoginActivity" />
-        <activity android:name=".SecondExercises.RegisterActivity" />
-        <activity android:name=".SecondExercises.ProfileActivity" />
+        <activity
+            android:name=".SecondExercises.BaseActivity"
+            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".SecondExercises.LoginActivity"
+            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".SecondExercises.RegisterActivity"
+            android:theme="@style/AppThemeNoActionBar"/>
+        <activity
+            android:name=".SecondExercises.ProfileActivity"
+            android:theme="@style/AppThemeNoActionBar"/>
     </application>
 
 </manifest>
