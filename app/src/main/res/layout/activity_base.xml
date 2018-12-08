@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#170420"
     tools:ignore="MissingPrefix"
+    android:background="@drawable/shape_bg"
     android:layout_height="match_parent"
     tools:context=".SecondExercises.BaseActivity">
     
     <ImageView
         android:id="@+id/header"
+        android:src="@drawable/pic_bg_4"
         android:scaleType="centerCrop"
-        android:src="@drawable/pic_bg_5"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
@@ -78,9 +78,9 @@
         android:layout_below="@+id/logoLayout"
         android:id="@+id/txtWelcome"
         fontPath="cinzel_bold.otf"
-        android:layout_marginTop="80dp"
-        android:text="Welcome To My Application"
-        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:text="Welcome"
+        android:textSize="50sp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:padding="5dp"
@@ -90,12 +90,13 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:background="#5a000000"
         fontPath="exo2_light.otf"
         android:layout_below="@+id/txtWelcome"
         android:id="@+id/txtInfo"
-        android:layout_marginTop="25dp"
-        android:text="Hello!\nYou must be logged in to continue to work"
-        android:textSize="22sp"
+        android:layout_marginTop="40dp"
+        android:text="Hello!\n\nYou must be logged in to continue to work"
+        android:textSize="24sp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:padding="5dp"
@@ -103,5 +104,58 @@
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        fontPath="exo2_light.otf"
+        android:layout_below="@+id/txtInfo"
+        android:id="@+id/txtSelect"
+        android:layout_marginTop="10dp"
+        android:text="Please Select a Button"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textColor="@color/gray400"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray100"
+            android:textSize="18sp"
+            android:text="Register"
+            android:background="@drawable/shape_register"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray100"
+            android:textSize="18sp"
+            android:text="Login"
+            android:background="@drawable/shape_login"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
     
 </RelativeLayout>
