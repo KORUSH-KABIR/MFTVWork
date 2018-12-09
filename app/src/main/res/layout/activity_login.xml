@@ -84,6 +84,9 @@
         android:paddingRight="10dp" />
 
     <android.support.v7.widget.AppCompatButton
+        android:textColor="@color/gray100"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:id="@+id/btnLogin"
         fontPath="exo2_light.otf"
         android:layout_below="@+id/chb_remember"
