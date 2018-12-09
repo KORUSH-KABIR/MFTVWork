@@ -35,6 +35,7 @@ public class BaseActivity extends SetupActivity {
 
         if(helper.isRemember()){
             startActivity(ProfileActivity.class);
+            finish();
         }
 
         initViews();
@@ -272,6 +273,7 @@ public class BaseActivity extends SetupActivity {
         Intent intent = new Intent(this , activity);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_open_activity , R.anim.anim_close_activity);
+        finish();
     }
 
     @Override

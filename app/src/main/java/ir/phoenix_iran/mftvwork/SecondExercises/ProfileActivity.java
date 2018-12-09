@@ -17,9 +17,7 @@ public class ProfileActivity extends SetupActivity {
         setContentView(R.layout.activity_profile);
         helper = new UserHelper(this);
         getDetail();
-
-
-
+        initViews();
     }
 
     private void initViews(){
