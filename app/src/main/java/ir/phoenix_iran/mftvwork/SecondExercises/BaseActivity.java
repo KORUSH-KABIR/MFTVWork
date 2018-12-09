@@ -15,6 +15,7 @@ import ir.phoenix_iran.mftvwork.R;
 
 public class BaseActivity extends SetupActivity {
 
+    private static final int LENGTH_ANIMATION = 500;
     private RelativeLayout baseLayout , loginLayout , registerLayout;
     private Button btnLogin , btnRegister;
     private boolean stateLogin = false;
@@ -79,7 +80,8 @@ public class BaseActivity extends SetupActivity {
                 }
             });
         }
-        anim.setDuration(800);
+        assert anim != null;
+        anim.setDuration(LENGTH_ANIMATION);
         anim.start();
     }
 
@@ -105,7 +107,8 @@ public class BaseActivity extends SetupActivity {
                 }
             });
         }
-        anim.setDuration(800);
+        assert anim != null;
+        anim.setDuration(LENGTH_ANIMATION);
         anim.start();
     }
 
@@ -131,7 +134,8 @@ public class BaseActivity extends SetupActivity {
                 }
             });
         }
-        anim.setDuration(800);
+        assert anim != null;
+        anim.setDuration(LENGTH_ANIMATION);
         anim.start();
     }
 
@@ -157,7 +161,8 @@ public class BaseActivity extends SetupActivity {
                 }
             });
         }
-        anim.setDuration(800);
+        assert anim != null;
+        anim.setDuration(LENGTH_ANIMATION);
         anim.start();
     }
 
