@@ -14,6 +14,7 @@
         android:layout_height="match_parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photoProfile"
         android:layout_width="180dp"
         android:padding="5dp"
         android:layout_centerHorizontal="true"
@@ -23,5 +24,74 @@
         app:civ_border_width="3dp"
         android:src="@drawable/photo_2_1"
         android:layout_height="180dp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutName"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/photoProfile"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/editName"
+            style="@style/ClickableCircle"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:layout_toStartOf="@+id/txtName"
+            android:src="@drawable/icon_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txtName" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:padding="5dp"
+            android:text="@string/app_name"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/gray100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/layoutName"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/editUsername"
+            style="@style/ClickableCircle"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:layout_toStartOf="@+id/txtUsername"
+            android:src="@drawable/icon_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txtUsername" />
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:padding="5dp"
+            android:text="@string/app_name"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/gray400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
