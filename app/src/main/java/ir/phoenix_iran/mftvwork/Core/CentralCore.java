@@ -16,7 +16,7 @@ public class CentralCore extends Application {
 
     private void Font(){
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("noto_serif_regular.ttf")
+                .setDefaultFontPath("exo2_light.otf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );

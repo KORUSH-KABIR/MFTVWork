@@ -31,12 +31,6 @@
             android:name=".SecondExercises.BaseActivity"
             android:theme="@style/AppThemeNoActionBar"/>
         <activity
-            android:name=".SecondExercises.LoginActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
-        <activity
-            android:name=".SecondExercises.RegisterActivity"
-            android:theme="@style/AppThemeNoActionBar"/>
-        <activity
             android:name=".SecondExercises.ProfileActivity"
             android:theme="@style/AppThemeNoActionBar"/>
     </application>

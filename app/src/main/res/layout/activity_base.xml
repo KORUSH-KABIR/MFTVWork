@@ -275,7 +275,7 @@
         android:id="@+id/registerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="match_parent"
@@ -306,6 +306,7 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtRegisterName"
                 fontPath="exo2_light.otf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -321,6 +322,7 @@
                 android:textSize="20sp" />
 
             <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtRegisterUsername"
                 fontPath="exo2_light.otf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -336,6 +338,7 @@
                 android:textSize="20sp" />
 
             <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtRegisterEmail"
                 fontPath="exo2_light.otf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -351,6 +354,7 @@
                 android:textSize="20sp" />
 
             <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtRegisterPassword"
                 fontPath="exo2_light.otf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

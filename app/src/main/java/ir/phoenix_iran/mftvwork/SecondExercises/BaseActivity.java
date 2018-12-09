@@ -12,8 +12,10 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import ir.phoenix_iran.mftvwork.Core.SetupActivity;
+import ir.phoenix_iran.mftvwork.Core.UserHelper;
 import ir.phoenix_iran.mftvwork.R;
 
 public class BaseActivity extends SetupActivity {
@@ -23,11 +25,13 @@ public class BaseActivity extends SetupActivity {
     private Button btnLogin , btnRegister;
     private boolean stateLogin = false;
     private boolean stateRegister = false;
+    private UserHelper helper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
+        helper = new UserHelper(this);
         initViews();
         initLoginLayout();
         initRegisterLayout();
@@ -87,21 +91,66 @@ public class BaseActivity extends SetupActivity {
                 }
                 else {
                     if(chb_remember.isChecked()){
-
+                        helper.setUsername(edtLoginUsername.getText().toString());
+                        helper.setPassword(edtLoginPassword.getText().toString());
+                        helper.setName("EMPTY");
+                        helper.setEmail("EMPTY");
+                        startActivity(ProfileActivity.class);
                     }
                     else {
-
+                        Toast.makeText(BaseActivity.this, "Please select remember me", Toast.LENGTH_LONG).show();
                     }
                 }
             }
         });
-
     }
 
     private void initRegisterLayout(){
 
+        final AppCompatEditText edtRegisterName       = findViewById(R.id.edtRegisterName);
+        final AppCompatEditText edtRegisterUsername   = findViewById(R.id.edtRegisterUsername);
+        final AppCompatEditText edtRegisterEmail      = findViewById(R.id.edtRegisterEmail);
+        final AppCompatEditText edtRegisterPassword   = findViewById(R.id.edtRegisterPassword);
+        final AppCompatCheckBox chb_remember_register = findViewById(R.id.chb_remember_register);
+        AppCompatButton btnRegisterLayout = findViewById(R.id.btnRegisterLayout);
 
-
+        btnRegisterLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(edtRegisterName.getText().toString().equals("")){
+                    edtRegisterName.setFocusable(true);
+                    edtRegisterName.setError("Name is Empty");
+                }
+                else if(edtRegisterUsername.getText().toString().equals("")){
+                    edtRegisterUsername.setFocusable(true);
+                    edtRegisterUsername.setError("Username is Empty");
+                }
+                else if(edtRegisterEmail.getText().toString().equals("")){
+                    edtRegisterEmail.setFocusable(true);
+                    edtRegisterEmail.setError("Email is Empty");
+                }
+                else if(edtRegisterPassword.getText().toString().equals("")){
+                    edtRegisterPassword.setFocusable(true);
+                    edtRegisterPassword.setError("Password is Empty");
+                }
+                else if(edtRegisterPassword.getText().length() < 4 || edtRegisterPassword.getText().length() > 8){
+                    edtRegisterPassword.setFocusable(true);
+                    edtRegisterPassword.setError("The password must be greater than 3 letters and less than 9 characters.");
+                }
+                else {
+                    if(chb_remember_register.isChecked()){
+                        helper.setName(edtRegisterName.getText().toString());
+                        helper.setUsername(edtRegisterUsername.getText().toString());
+                        helper.setEmail(edtRegisterEmail.getText().toString());
+                        helper.setPassword(edtRegisterPassword.getText().toString());
+                        startActivity(ProfileActivity.class);
+                    }
+                    else {
+                        Toast.makeText(BaseActivity.this, "Please select remember me", Toast.LENGTH_LONG).show();
+                    }
+                }
+            }
+        });
     }
 
     private void openLoginLayout(){

@@ -1,8 +1,6 @@
-package ir.phoenix_iran.mftvwork.SecondExercises;
+package ir.phoenix_iran.mftvwork.Core;
 
 import android.content.Context;
-
-import ir.phoenix_iran.mftvwork.Core.SharedPreferenceUtils;
 
 public class UserHelper {
 
