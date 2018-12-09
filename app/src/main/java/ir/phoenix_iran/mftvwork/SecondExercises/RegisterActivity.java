@@ -12,4 +12,10 @@ public class RegisterActivity extends SetupActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.anim_open_activity , R.anim.anim_close_activity);
+    }
 }

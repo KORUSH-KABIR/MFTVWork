@@ -131,6 +131,7 @@
         android:weightSum="2">
 
         <Button
+            android:id="@+id/btnRegister"
             fontPath="exo2_light.otf"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -146,6 +147,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btnLogin"
             fontPath="exo2_light.otf"
             android:layout_width="0dp"
             android:layout_height="match_parent"

@@ -1,17 +1,18 @@
 package ir.phoenix_iran.mftvwork;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
 
-import ir.phoenix_iran.mftvwork.Core.SetupActivity;
 import ir.phoenix_iran.mftvwork.FirstExercises.FirstSection;
 import ir.phoenix_iran.mftvwork.FirstExercises.SecondSection_1;
 import ir.phoenix_iran.mftvwork.SecondExercises.BaseActivity;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class MainActivity extends SetupActivity {
+public class MainActivity extends AppCompatActivity {
 
     private AppCompatButton firstExercise , secondExercise , thirdExercise;
 
@@ -50,6 +51,10 @@ public class MainActivity extends SetupActivity {
     private void startActivity(Class<? extends AppCompatActivity> activity){
         Intent intent = new Intent(this , activity);
         startActivity(intent);
+    }
+
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
 }
