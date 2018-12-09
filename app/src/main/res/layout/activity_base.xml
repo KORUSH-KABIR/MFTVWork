@@ -100,7 +100,7 @@
         android:background="#5a000000"
         android:gravity="center"
         android:padding="5dp"
-        android:text="To run this application, having an account is mandatory.\n\nSo, in order to continue the program, first log in to your account."
+        android:text="To run this application, having an account is mandatory.\n\nSo, in order to continue the application, first log in to your account."
         android:textColor="@color/gray400"
         android:textSize="24sp"
         android:textStyle="bold" />
