@@ -206,6 +206,7 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtLoginUsername"
                 fontPath="exo2_light.otf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -221,6 +222,7 @@
                 android:textSize="20sp" />
 
             <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edtLoginPassword"
                 fontPath="exo2_light.otf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

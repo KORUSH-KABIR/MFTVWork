@@ -5,6 +5,9 @@ import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatCheckBox;
+import android.support.v7.widget.AppCompatEditText;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.Button;
@@ -26,6 +29,8 @@ public class BaseActivity extends SetupActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
         initViews();
+        initLoginLayout();
+        initRegisterLayout();
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +61,47 @@ public class BaseActivity extends SetupActivity {
         registerLayout = findViewById(R.id.registerLayout);
         btnLogin = findViewById(R.id.btnLogin);
         btnRegister = findViewById(R.id.btnRegister);
+    }
+
+    private void initLoginLayout(){
+
+        final AppCompatEditText edtLoginUsername = findViewById(R.id.edtLoginUsername);
+        final AppCompatEditText edtLoginPassword = findViewById(R.id.edtLoginPassword);
+        final AppCompatCheckBox chb_remember = findViewById(R.id.chb_remember);
+        AppCompatButton btnLoginLayout = findViewById(R.id.btnLoginLayout);
+
+        btnLoginLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(edtLoginUsername.getText().toString().equals("")){
+                    edtLoginUsername.setFocusable(true);
+                    edtLoginUsername.setError("Username is Empty");
+                }
+                else if(edtLoginPassword.getText().toString().equals("")){
+                    edtLoginPassword.setFocusable(true);
+                    edtLoginPassword.setError("Password is Empty");
+                }
+                else if(edtLoginPassword.getText().length() < 4 || edtLoginPassword.getText().length() > 8){
+                    edtLoginPassword.setFocusable(true);
+                    edtLoginPassword.setError("The password must be greater than 3 letters and less than 9 characters.");
+                }
+                else {
+                    if(chb_remember.isChecked()){
+
+                    }
+                    else {
+
+                    }
+                }
+            }
+        });
+
+    }
+
+    private void initRegisterLayout(){
+
+
+
     }
 
     private void openLoginLayout(){
