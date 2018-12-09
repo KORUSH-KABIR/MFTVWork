@@ -275,7 +275,7 @@
         android:id="@+id/registerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible">
+        android:visibility="invisible">
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="match_parent"
@@ -347,7 +347,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/background_edit_text"
                 android:hint="Enter Your Email"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:padding="15dp"
                 android:textColor="@color/gray200"
                 android:textColorHint="@color/gray500"

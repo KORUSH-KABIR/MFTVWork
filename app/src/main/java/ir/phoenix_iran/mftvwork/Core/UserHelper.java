@@ -10,6 +10,7 @@ public class UserHelper {
     private static final String KEY_USER_PASSWORD      = "Password";
     private static final String KEY_USER_NAME          = "Name";
     private static final String KEY_USER_EMAIL         = "Email";
+    private static final String KEY_USER_REMEMBER      = "Remember";
 
     public UserHelper(Context context) {
         this.spu = new SharedPreferenceUtils(context);
@@ -69,6 +70,20 @@ public class UserHelper {
         return spu.readString(SHARED_PREFERENCE_FILE,
                 KEY_USER_PASSWORD,
                 ""
+        );
+    }
+
+    public void setRemember(boolean remember){
+        spu.writeBoolean(SHARED_PREFERENCE_FILE,
+                KEY_USER_REMEMBER,
+                remember
+        );
+    }
+
+    public boolean isRemember(){
+        return spu.readBoolean(SHARED_PREFERENCE_FILE,
+                KEY_USER_REMEMBER,
+                false
         );
     }
 

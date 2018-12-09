@@ -32,6 +32,11 @@ public class BaseActivity extends SetupActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
         helper = new UserHelper(this);
+
+        if(helper.isRemember()){
+            startActivity(ProfileActivity.class);
+        }
+
         initViews();
         initLoginLayout();
         initRegisterLayout();
@@ -95,6 +100,7 @@ public class BaseActivity extends SetupActivity {
                         helper.setPassword(edtLoginPassword.getText().toString());
                         helper.setName("EMPTY");
                         helper.setEmail("EMPTY");
+                        helper.setRemember(true);
                         startActivity(ProfileActivity.class);
                     }
                     else {
@@ -143,6 +149,7 @@ public class BaseActivity extends SetupActivity {
                         helper.setUsername(edtRegisterUsername.getText().toString());
                         helper.setEmail(edtRegisterEmail.getText().toString());
                         helper.setPassword(edtRegisterPassword.getText().toString());
+                        helper.setRemember(true);
                         startActivity(ProfileActivity.class);
                     }
                     else {
