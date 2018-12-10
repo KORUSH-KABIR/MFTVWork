@@ -1,8 +1,7 @@
 package ir.phoenix_iran.mftvwork.SecondExercises;
 
-import android.os.Build;
 import android.os.Bundle;
-import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import ir.phoenix_iran.mftvwork.Core.SetupActivity;
 import ir.phoenix_iran.mftvwork.Core.UserHelper;
@@ -24,16 +23,15 @@ public class ProfileActivity extends SetupActivity {
 
     private void initViews(){
 
-        ProgressBar prg1 = findViewById(R.id.prg1);
-        prg1.setIndeterminate(false);
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
-            prg1.setProgress(80 , true);
-        }
-        else {
-            prg1.setProgress(80);
-        }
-        prg1.setMax(100);
+        TextView txtUsername = findViewById(R.id.txtUsername);
+        TextView txtName     = findViewById(R.id.txtName);
+        TextView txtEmail    = findViewById(R.id.txtEmail);
+        TextView txtPassword = findViewById(R.id.txtPassword);
 
+        txtUsername.setText(username);
+        txtName.setText(name);
+        txtEmail.setText(email);
+        txtPassword.setText(password);
 
     }
 
