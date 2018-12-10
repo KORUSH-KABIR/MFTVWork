@@ -3,6 +3,7 @@ package ir.phoenix_iran.mftvwork.SecondExercises;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,28 +47,28 @@ public class ProfileActivity extends SetupActivity {
         txtUsername.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(EditDetailActivity.class , username , REQUEST_CODE_EDIT_USERNAME);
             }
         });
 
         txtName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(EditDetailActivity.class , name , REQUEST_CODE_EDIT_NAME);
             }
         });
 
         txtEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(EditDetailActivity.class , email , REQUEST_CODE_EDIT_EMAIL);
             }
         });
 
         txtPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(EditDetailActivity.class , password , REQUEST_CODE_EDIT_PASSWORD);
             }
         });
     }
@@ -77,6 +78,13 @@ public class ProfileActivity extends SetupActivity {
         username = helper.getUsername();
         email    = helper.getEmail();
         password = helper.getPassword();
+    }
+
+    private void startActivity(Class<? extends AppCompatActivity> activity , String text , int requestCode){
+        Intent intent = new Intent(this , activity);
+        intent.putExtra("text" , text);
+        startActivityForResult(intent,requestCode);
+        overridePendingTransition(R.anim.anim_open_activity , R.anim.anim_close_activity);
     }
 
     @Override

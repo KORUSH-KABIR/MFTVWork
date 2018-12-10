@@ -3,7 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
     tools:context=".SecondExercises.EditDetailActivity">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/background_dialog_edit_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edtDetail"
+            fontPath="exo2_light.otf"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edit_text"
+            android:hint="Enter Your Detail"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/gray200"
+            android:textColorHint="@color/gray300"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnEdit"
+            android:layout_below="@+id/edtDetail"
+            android:background="@drawable/selector_button_login"
+            android:layout_margin="5dp"
+            android:text="Save Detail"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/gray300"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
