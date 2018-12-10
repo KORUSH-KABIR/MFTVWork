@@ -117,6 +117,7 @@ public class ProfileActivity extends SetupActivity {
                 dialog.dismiss();
             }
         });
+        dialog.show();
     }
 
     private void getDetail(){
