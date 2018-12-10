@@ -3,7 +3,10 @@ package ir.phoenix_iran.mftvwork.SecondExercises;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatImageView;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +19,7 @@ public class ProfileActivity extends SetupActivity {
 
     private UserHelper helper;
     private String name , username , email , password;
+    private DrawerLayout drawerLayout;
     private static final int REQUEST_CODE_EDIT_USERNAME = 0;
     private static final int REQUEST_CODE_EDIT_NAME     = 1;
     private static final int REQUEST_CODE_EDIT_EMAIL    = 2;
@@ -38,6 +42,8 @@ public class ProfileActivity extends SetupActivity {
         TextView txtName     = findViewById(R.id.txtName);
         TextView txtEmail    = findViewById(R.id.txtEmail);
         TextView txtPassword = findViewById(R.id.txtPassword);
+        AppCompatImageView imgMenu = findViewById(R.id.imgMenu);
+        drawerLayout = findViewById(R.id.drawerLayout);
 
         txtUsername.setText("@" + username);
         txtName.setText(name);
@@ -69,6 +75,13 @@ public class ProfileActivity extends SetupActivity {
             @Override
             public void onClick(View v) {
                 startActivity(EditDetailActivity.class , password , REQUEST_CODE_EDIT_PASSWORD);
+            }
+        });
+
+        imgMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(Gravity.START);
             }
         });
     }
