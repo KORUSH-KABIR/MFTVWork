@@ -7,190 +7,151 @@
     tools:context=".SecondExercises.ProfileActivity">
 
     <android.support.v7.widget.AppCompatImageView
-        android:src="@drawable/photo_background_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:foreground="@drawable/shape_bg"
         android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:src="@drawable/photo_background_2" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/photoProfile"
         android:layout_width="180dp"
-        android:padding="5dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
+        android:layout_height="180dp"
         android:layout_alignParentTop="true"
-        app:civ_border_color="@color/gray200"
-        app:civ_border_width="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
         android:src="@drawable/photo_2_1"
-        android:layout_height="180dp" />
+        app:civ_border_color="@color/gray200"
+        app:civ_border_width="3dp" />
 
-    <RelativeLayout
-        android:id="@+id/layoutName"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/photoProfile"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/editName"
-            style="@style/ClickableCircle"
-            android:clickable="true"
-            android:focusable="true"
-            android:padding="5dp"
-            android:layout_toStartOf="@+id/txtName"
-            android:src="@drawable/icon_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/txtName" />
-
-        <TextView
-            android:id="@+id/txtName"
-            android:padding="5dp"
-            android:text="@string/app_name"
-            android:textSize="19sp"
-            android:gravity="center"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/gray100"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="10dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginEnd="10dp"
-        android:layout_below="@+id/layoutName"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/app_name"
+        android:textColor="@color/gray100"
+        android:textSize="19sp" />
 
-        <ImageView
-            android:id="@+id/editUsername"
-            style="@style/ClickableCircle"
-            android:clickable="true"
-            android:focusable="true"
-            android:padding="5dp"
-            android:layout_toStartOf="@+id/txtUsername"
-            android:src="@drawable/icon_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/txtUsername" />
-
-        <TextView
-            android:id="@+id/txtUsername"
-            android:padding="5dp"
-            android:text="@string/app_name"
-            android:textSize="17sp"
-            android:gravity="center"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/gray400"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/app_name"
+        android:textColor="@color/gray400"
+        android:textSize="17sp" />
 
     <View
-        android:layout_above="@+id/scoreLayout"
         android:id="@+id/v"
-        android:visibility="visible"
-        android:background="@color/gray400"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:layout_above="@+id/scoreLayout"
+        android:background="@color/gray400"
+        android:visibility="visible" />
 
     <RelativeLayout
         android:id="@+id/scoreLayout"
-        android:layout_above="@+id/v1"
-        android:layout_margin="5dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v1"
+        android:layout_margin="5dp">
 
         <TextView
             android:id="@+id/score"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/gray300"
-            android:padding="5dp"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:text="Your Score"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="Your Score"
+            android:textColor="@color/gray300"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <ProgressBar
             android:id="@+id/prg2"
-            android:layout_below="@+id/score"
-            android:layout_centerHorizontal="true"
-            android:progress="2580"
-            android:max="10000"
-            android:layout_margin="2dp"
-            android:indeterminate="false"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="2dp"
+            android:indeterminate="false"
+            android:max="10000"
+            android:progress="2580" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/prg2"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/gray500"
             android:padding="2dp"
-            android:textSize="25sp"
             android:text="2580 / 10000"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:textColor="@color/gray500"
+            android:textSize="25sp" />
 
     </RelativeLayout>
 
     <View
-        android:layout_above="@+id/detailLayout"
         android:id="@+id/v1"
-        android:visibility="visible"
-        android:background="@color/gray400"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:layout_above="@+id/detailLayout"
+        android:background="@color/gray400"
+        android:visibility="visible" />
 
     <RelativeLayout
         android:id="@+id/detailLayout"
-        android:layout_margin="5dp"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
 
         <TextView
             android:id="@+id/detail"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/gray300"
-            android:padding="5dp"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:text="Your Detail"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="Your Detail"
+            android:textColor="@color/gray300"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <ProgressBar
             android:id="@+id/prg1"
-            android:layout_below="@+id/detail"
-            android:layout_centerHorizontal="true"
-            android:progress="80"
-            android:max="100"
-            android:layout_margin="2dp"
-            android:indeterminate="false"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="2dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="80" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/prg1"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/gray500"
             android:padding="2dp"
-            android:textSize="25sp"
             android:text="80%"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:textColor="@color/gray500"
+            android:textSize="25sp" />
 
     </RelativeLayout>
 
