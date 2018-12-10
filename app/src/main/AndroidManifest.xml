@@ -34,6 +34,7 @@
             android:theme="@style/AppThemeNoActionBar" />
         <activity
             android:name=".SecondExercises.EditDetailActivity"
+            android:label="Edit Your Detail:"
             android:theme="@style/Theme.AppCompat.Dialog"/>
     </application>
 
