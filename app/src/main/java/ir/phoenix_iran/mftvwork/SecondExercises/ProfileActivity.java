@@ -1,6 +1,8 @@
 package ir.phoenix_iran.mftvwork.SecondExercises;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -8,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatImageView;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +46,7 @@ public class ProfileActivity extends SetupActivity {
         TextView txtEmail    = findViewById(R.id.txtEmail);
         TextView txtPassword = findViewById(R.id.txtPassword);
         AppCompatImageView imgMenu = findViewById(R.id.imgMenu);
+        RelativeLayout menuExit = findViewById(R.id.menuExit);
         drawerLayout = findViewById(R.id.drawerLayout);
 
         txtUsername.setText("@" + username);
@@ -82,6 +86,35 @@ public class ProfileActivity extends SetupActivity {
             @Override
             public void onClick(View v) {
                 drawerLayout.openDrawer(Gravity.START);
+            }
+        });
+
+        menuExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.closeDrawer(Gravity.START);
+                showDialog();
+            }
+        });
+    }
+
+    private void showDialog(){
+
+        AlertDialog dialog = new AlertDialog.Builder(this).create();
+        dialog.setTitle("Exit");
+        dialog.setMessage("Do You Want Exit?");
+        dialog.setButton(AlertDialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                finish();
+                overridePendingTransition(R.anim.anim_open_activity , R.anim.anim_close_activity);
+            }
+        });
+        dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
             }
         });
     }
@@ -139,7 +172,12 @@ public class ProfileActivity extends SetupActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        overridePendingTransition(R.anim.anim_open_activity , R.anim.anim_close_activity);
+        if(drawerLayout.isDrawerOpen(Gravity.START)){
+            drawerLayout.closeDrawer(Gravity.START);
+        }
+        else {
+            super.onBackPressed();
+            overridePendingTransition(R.anim.anim_open_activity , R.anim.anim_close_activity);
+        }
     }
 }

@@ -27,7 +27,7 @@
             android:layout_marginStart="5dp"
             style="@style/ClickableCircle"
             android:src="@drawable/icon_menu"
-            android:padding="7dp"
+            android:padding="8dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentLeft="true"
