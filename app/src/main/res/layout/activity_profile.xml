@@ -2,26 +2,63 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawerLayout"
-    tools:openDrawer="start"
-    tools:context=".SecondExercises.ProfileActivity">
+    tools:context=".SecondExercises.ProfileActivity"
+    tools:openDrawer="start">
 
-    <include layout="@layout/content_main"/>
+    <include layout="@layout/content_main" />
 
     <RelativeLayout
-        android:background="@color/gray300"
-        android:layout_gravity="start"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/gray900">
 
         <ImageView
-            android:elevation="4dp"
-            android:src="@drawable/photo_background_5"
-            android:scaleType="centerCrop"
+            android:id="@+id/header"
             android:layout_width="match_parent"
-            android:layout_height="180dp" />
+            android:layout_height="180dp"
+            android:elevation="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_background_5" />
+
+        <RelativeLayout
+            android:id="@+id/menuExit"
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/ClickableWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/header">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgMenu1"
+                style="@style/ClickableCircle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="7dp"
+                android:src="@drawable/icon_close" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/imgMenu1"
+                android:layout_toRightOf="@+id/imgMenu1"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:text="Exit"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
