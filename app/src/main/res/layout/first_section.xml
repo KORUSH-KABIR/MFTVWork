@@ -76,7 +76,7 @@
                 android:layout_marginRight="16sp"
                 android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
-                android:src="@mipmap/icon_fingerprint" />
+                android:src="@drawable/icon_fingerprint" />
 
         </RelativeLayout>
 
@@ -132,7 +132,7 @@
                 android:layout_marginRight="16sp"
                 android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
-                android:src="@mipmap/icon_fingerprint" />
+                android:src="@drawable/icon_fingerprint" />
 
         </RelativeLayout>
 
@@ -188,7 +188,7 @@
                 android:layout_marginRight="16sp"
                 android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
-                android:src="@mipmap/icon_fingerprint" />
+                android:src="@drawable/icon_fingerprint" />
 
         </RelativeLayout>
 
@@ -263,7 +263,7 @@
                 android:layout_marginRight="16sp"
                 android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
-                android:src="@mipmap/icon_fingerprint" />
+                android:src="@drawable/icon_fingerprint" />
 
         </RelativeLayout>
 
@@ -319,7 +319,7 @@
                 android:layout_marginRight="16sp"
                 android:contentDescription="@string/txt_todo"
                 android:padding="5dp"
-                android:src="@mipmap/icon_fingerprint" />
+                android:src="@drawable/icon_fingerprint" />
 
         </RelativeLayout>
 

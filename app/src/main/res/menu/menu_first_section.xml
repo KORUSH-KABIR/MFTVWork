@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="@string/app_name" android:icon="@mipmap/icon_fingerprint"/>
+    <item android:title="@string/app_name" android:icon="@drawable/icon_fingerprint"/>
 
 </menu>
