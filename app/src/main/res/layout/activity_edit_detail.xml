@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#00000000"
     tools:context=".SecondExercises.EditDetailActivity">
 
     <RelativeLayout
         android:layout_margin="5dp"
-        android:background="@drawable/background_dialog_edit_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

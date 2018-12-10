@@ -1,5 +1,6 @@
 package ir.phoenix_iran.mftvwork.SecondExercises;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,7 +40,7 @@ public class EditDetailActivity extends SetupActivity {
                 else {
                     Intent intent = new Intent();
                     intent.putExtra("data" , edtDetail.getText().toString());
-                    startActivity(intent);
+                    setResult(Activity.RESULT_OK , intent);
                     finish();
                     overridePendingTransition(R.anim.anim_open_activity , R.anim.anim_close_activity);
                 }
